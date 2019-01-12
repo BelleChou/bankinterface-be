@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="yihuisoft-service:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="yihuisoft-service-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="yihuisoft-service:war exploded" />
+    </root>
+  </artifact>
+</component>

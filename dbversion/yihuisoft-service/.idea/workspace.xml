@@ -1,0 +1,1296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1df8d7c8-c3bf-4c53-a70c-b0239b22f60d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/test/TesetSendList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/java/com/yihuisoft" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/java/com/yihuisoft/commonbiz" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/java/com/yihuisoft/commonbiz/Criteria.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/java/com/yihuisoft/commonbiz/mapper" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/java/com/yihuisoft/commonbiz/mapper/cluster" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/java/com/yihuisoft/commonbiz/mapper/master" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/java/com/yihuisoft/commonbiz/mapper/master/BaseDaoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/java/com/yihuisoft/commonbiz/service" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/java/com/yihuisoft/commonbiz/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/resources" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/resources/mybatiscom" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/resources/mybatiscom/cluster" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/resources/mybatiscom/master" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/main/resources/mybatiscom/master/BaseDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/test" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/test/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/test/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/test/java/com/yihuisoft" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/src/test/java/com/yihuisoft/commonbiz" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common-biz/yihuisoft-common-biz.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/AppResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/HttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/InDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/OutDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/dto" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/dto/BaseInDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/dto/BaseOutDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/enumdef" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/enumdef/BizEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/exception" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/exception/ApplicationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/qrcode" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/qrcode/BarCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/qrcode/QRCodeLogoConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/qrcode/QRCodeParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/qrcode/QRCodeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/AmountUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/ChangeCharset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/ClassUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/ComConst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/CommonFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/DataUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/EmojiUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/EncryptUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/JSONUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/JavaWebToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/LocationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/MD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/ReflectUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/SortUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/StringReplaceUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/UuidUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/excel" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/excel/BeanToExcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/excel/Excel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/excel/ExcelDataFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/util/excel/ExcelToBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/main/resources" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/src/test" afterDir="true" />
+      <change afterPath="$PROJECT_DIR$/../yihuisoft-common/yihuisoft-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/artifacts/yihuisoft_service_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/artifacts/yihuisoft_service_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__com_github_binarywang_java_emoji_converter_0_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__com_github_binarywang_java_emoji_converter_0_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__com_google_code_gson_gson_2_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__com_google_code_gson_gson_2_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__com_google_zxing_core_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__com_google_zxing_core_3_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__com_google_zxing_javase_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__com_google_zxing_javase_3_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_discovery_commons_discovery_0_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_discovery_commons_discovery_0_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_4_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_4_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__org_apache_poi_poi_3_10_FINAL.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__org_apache_poi_poi_3_10_FINAL.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_10_FINAL.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_10_FINAL.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_1_5_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/bankinterface-biz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/bankinterface-biz.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/mapper/bank/BankMappingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/mapper/bank/BankMappingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/service/BankMappingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/service/BankMappingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/utils/DataToXmlUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/utils/DataToXmlUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/src/main/resources/mybatis/bank/BankMappingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/src/main/resources/mybatis/bank/BankMappingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/test/BankTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/test/BankTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bankinterface-biz/src/test/resources/oracle-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../bankinterface-biz/src/test/resources/oracle-dev.properties" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/../bankinterface-biz/target/" />
+    <ignored path="$PROJECT_DIR$/../yihuisoft-common/target/" />
+    <ignored path="$PROJECT_DIR$/../yihuisoft-common-biz/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1808025765">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="4" />
+          <entry key="java" value="31" />
+          <entry key="properties" value="9" />
+          <entry key="sql" value="3" />
+          <entry key="txt" value="2" />
+          <entry key="xml" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="4" />
+          <entry key="JAVA" value="31" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Properties" value="9" />
+          <entry key="SQL" value="3" />
+          <entry key="XML" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1614" />
+          <entry key="properties" value="23" />
+          <entry key="xml" value="203" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1614" />
+          <entry key="Properties" value="23" />
+          <entry key="SQL" value="1" />
+          <entry key="XML" value="202" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/service/BankMappingService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3762">
+              <caret line="347" selection-start-line="347" selection-end-line="347" />
+              <folding>
+                <element signature="docComment;method#run#0;class#BankMappingService#0" />
+                <element signature="method#addBankMapping#0;class#BankMappingService#0" />
+                <element signature="method#addBankMappingString#0;class#BankMappingService#0" />
+                <element signature="method#updateBankMapping#0;class#BankMappingService#0" />
+                <element signature="method#queryPage#0;class#BankMappingService#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/postgresql-dev.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/oracle-dev.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-pro.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db2-dev.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/main/resources/mybatis/bank/BankMappingMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="606">
+              <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+              <folding>
+                <element signature="n#select#0;n#mapper#0;n#!!top" />
+                <element signature="n#select#1;n#mapper#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages_en_US.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+          <provider editor-type-id="ResourceBundle" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>springloaded</find>
+      <find>selectPageBankMappingList</find>
+      <find>findByBankMappingInterfaceNo</find>
+      <find>WRITER</find>
+      <find>queryBankMapping</find>
+      <find>page_select_bank_where</find>
+      <find>this.sumCount</find>
+      <find>四</find>
+      <find>repository_in</find>
+      <find>(String)</find>
+      <find>.toString()</find>
+      <find>updateOneBankMapping</find>
+      <find>||</find>
+      <find>or</find>
+      <find>'</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>two[3]</replace>
+      <replace>C</replace>
+      <replace>two[4]</replace>
+      <replace>two[2]</replace>
+      <replace>or</replace>
+      <replace>and</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../bankinterface-biz/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/test/BankTest.java" />
+        <option value="$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/utils/DataToXmlUtil.java" />
+        <option value="E:/maven/settings.xml" />
+        <option value="$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/test/TesetSendList.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/i18n/messages.properties" />
+        <option value="$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/service/BankMappingService.java" />
+        <option value="$PROJECT_DIR$/../bankinterface-biz/src/main/resources/mybatis/bank/BankMappingMapper.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="E:\maven\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="832" />
+    <option name="y" value="258" />
+    <option name="width" value="1036" />
+    <option name="height" value="733" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bankinterfacebiz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bankinterfacebiz" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bankinterfacebiz" type="462c0819:PsiDirectoryNode" />
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bankinterfacebiz" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bankinterfacebiz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bankinterfacebiz" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bankinterface-biz" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yihuisoft-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yihuisoft-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yihuisoft-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yihuisoft-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yihuisoft-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yihuisoft-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="i18n" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yihuisoft-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yihuisoft-service" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yihuisoft-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535437295592" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../FullyAutomatic/fullauto" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.splitter.proportion" value="0.28288823" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yihuisoft.bankinterfacebiz.test" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.YihuisoftserviceApplication">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesetSendList.bankTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bankinterface-biz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yihuisoft.bankinterfacebiz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yihuisoft.bankinterfacebiz.test" />
+      <option name="MAIN_CLASS_NAME" value="com.yihuisoft.bankinterfacebiz.test.TesetSendList" />
+      <option name="METHOD_NAME" value="bankTests" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesetSendList.bankTestsList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bankinterface-biz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yihuisoft.bankinterfacebiz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yihuisoft.bankinterfacebiz.test" />
+      <option name="MAIN_CLASS_NAME" value="com.yihuisoft.bankinterfacebiz.test.TesetSendList" />
+      <option name="METHOD_NAME" value="bankTestsList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesetSendList.testProcedure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bankinterface-biz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yihuisoft.bankinterfacebiz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yihuisoft.bankinterfacebiz.test" />
+      <option name="MAIN_CLASS_NAME" value="com.yihuisoft.bankinterfacebiz.test.TesetSendList" />
+      <option name="METHOD_NAME" value="testProcedure" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesetSendList.testSerName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bankinterface-biz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yihuisoft.bankinterfacebiz.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yihuisoft.bankinterfacebiz.test" />
+      <option name="MAIN_CLASS_NAME" value="com.yihuisoft.bankinterfacebiz.test.TesetSendList" />
+      <option name="METHOD_NAME" value="testSerName" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="YihuisoftserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="yihuisoft-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yihuisoft.yihuisoftservice.YihuisoftserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.YihuisoftserviceApplication" />
+      <item itemvalue="JUnit.TesetSendList.bankTests" />
+      <item itemvalue="JUnit.TesetSendList.bankTestsList" />
+      <item itemvalue="JUnit.TesetSendList.testSerName" />
+      <item itemvalue="JUnit.TesetSendList.testProcedure" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TesetSendList.testProcedure" />
+        <item itemvalue="JUnit.TesetSendList.bankTestsList" />
+        <item itemvalue="JUnit.TesetSendList.testSerName" />
+        <item itemvalue="JUnit.TesetSendList.bankTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\yy244\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="G:\BankUtil\dbsemiauto\dbversion\bankinterface-biz" />
+          <option name="myCopyRoot" value="G:\BankUtil\dbsemiauto\dbversion\bankinterface-biz" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="G:\BankUtil\dbsemiauto\dbversion\yihuisoft-common" />
+          <option name="myCopyRoot" value="G:\BankUtil\dbsemiauto\dbversion\yihuisoft-common" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="G:\BankUtil\dbsemiauto\dbversion\yihuisoft-common-biz" />
+          <option name="myCopyRoot" value="G:\BankUtil\dbsemiauto\dbversion\yihuisoft-common-biz" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="G:\BankUtil\dbsemiauto\dbversion\bankinterface-biz" />
+          <option name="myCopyRoot" value="G:\BankUtil\dbsemiauto\dbversion\bankinterface-biz" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="G:\BankUtil\dbsemiauto\dbversion\yihuisoft-common" />
+          <option name="myCopyRoot" value="G:\BankUtil\dbsemiauto\dbversion\yihuisoft-common" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="G:\BankUtil\dbsemiauto\dbversion\yihuisoft-common-biz" />
+          <option name="myCopyRoot" value="G:\BankUtil\dbsemiauto\dbversion\yihuisoft-common-biz" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1df8d7c8-c3bf-4c53-a70c-b0239b22f60d" name="Default" comment="" />
+      <created>1531101058518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531101058518</updated>
+      <workItem from="1531101061409" duration="649000" />
+      <workItem from="1534408557339" duration="18000" />
+      <workItem from="1534749459983" duration="2579000" />
+      <workItem from="1534759944564" duration="255000" />
+      <workItem from="1534760640568" duration="161000" />
+      <workItem from="1534760825566" duration="182000" />
+      <workItem from="1534763674825" duration="231000" />
+      <workItem from="1534764747860" duration="2195000" />
+      <workItem from="1534768103002" duration="236000" />
+      <workItem from="1534815160953" duration="10274000" />
+      <workItem from="1534843058592" duration="2468000" />
+      <workItem from="1534903488888" duration="442000" />
+      <workItem from="1534922471643" duration="11629000" />
+      <workItem from="1534988566786" duration="7981000" />
+      <workItem from="1535002966629" duration="1104000" />
+      <workItem from="1535004280071" duration="2768000" />
+      <workItem from="1535074467727" duration="10310000" />
+      <workItem from="1535190522227" duration="453000" />
+      <workItem from="1535333725809" duration="5393000" />
+      <workItem from="1535419689832" duration="6177000" />
+      <workItem from="1535442129443" duration="1480000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TesetSendList_bankTests - 2018.08.23 at 11h 28m 08s.xml">
+      <configuration name="TesetSendList.bankTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesetSendList_bankTests - 2018.08.23 at 11h 32m 43s.xml">
+      <configuration name="TesetSendList.bankTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesetSendList_bankTests - 2018.08.23 at 11h 35m 22s.xml">
+      <configuration name="TesetSendList.bankTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesetSendList_bankTestsList - 2018.08.23 at 11h 42m 22s.xml">
+      <configuration name="TesetSendList.bankTestsList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesetSendList_bankTestsList - 2018.08.23 at 11h 47m 00s.xml">
+      <configuration name="TesetSendList.bankTestsList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesetSendList_testSerName - 2018.08.23 at 11h 50m 37s.xml">
+      <configuration name="TesetSendList.testSerName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesetSendList_bankTestsList - 2018.08.23 at 11h 52m 25s.xml">
+      <configuration name="TesetSendList.bankTestsList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesetSendList_testProcedure - 2018.08.23 at 12h 01m 49s.xml">
+      <configuration name="TesetSendList.testProcedure" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesetSendList_testProcedure - 2018.08.23 at 13h 46m 22s.xml">
+      <configuration name="TesetSendList.testProcedure" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TesetSendList_testProcedure - 2018.08.23 at 13h 48m 24s.xml">
+      <configuration name="TesetSendList.testProcedure" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="66985000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20095949" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.32850778" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38084632" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Analysis" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4989339" weight="0.31625834" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Problems" order="15" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/test/TestXmlToMap.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/test/BankTest.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/test/BankTest.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/service/BankMappingService.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/service/BankMappingService.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/utils/DataToXmlUtil.java</url>
+          <line>206</line>
+          <properties />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/utils/DataToXmlUtil.java</url>
+          <line>211</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/utils/DataToXmlUtil.java</url>
+          <line>216</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/test/TesetSendList.java</url>
+          <line>151</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/utils/DataToXmlUtil.java</url>
+          <line>217</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/test/TesetSendList.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="obj.getClass()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>obj.getClass()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3266">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihuisoft/yihuisoftservice/ServletInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3956">
+          <caret line="172" column="57" selection-start-line="172" selection-start-column="57" selection-end-line="172" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihuisoft/yihuisoftservice/I18nConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihuisoft/yihuisoftservice/CacheUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihuisoft/yihuisoftservice/ApplicationUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="935" selection-start-line="935" selection-end-line="935" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/org/apache/ibatis/binding/MapperProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="30" column="38" lean-forward="true" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/test/TestXmlToMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1012">
+          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/test/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2875">
+          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3312">
+          <caret line="184" selection-start-line="184" selection-end-line="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../yihuisoft-common-biz/src/main/java/com/yihuisoft/commonbiz/service/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/YihuisofttestApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihuisoft/yihuisoftservice/YihuisoftserviceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/test/BankTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="149" column="58" selection-start-line="149" selection-start-column="58" selection-end-line="149" selection-end-column="58" />
+          <folding>
+            <element signature="method#bankTests#0;class#BankTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/maven/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="56" column="60" selection-start-line="56" selection-start-column="60" selection-end-line="56" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.10.RELEASE/spring-test-4.3.10.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/InDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2398">
+          <caret line="154" selection-start-line="154" selection-end-line="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/utils/DataToXmlUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4774">
+          <caret line="225" selection-start-line="225" selection-end-line="225" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/test/resources/说明数据结构.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1056" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/entity/BankMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1826">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/entity/BankData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/mapper/bank/BankMappingMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/test/java/com/yihuisoft/bankinterfacebiz/test/TesetSendList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="65" selection-start-line="65" selection-start-column="2" selection-end-line="71" selection-end-column="30" />
+          <folding>
+            <element signature="method#bankTestsList#0;class#TesetSendList#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/test/resources/SQL.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/test/resources/oracle-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../yihuisoft-common/src/main/java/com/yihuisoft/common/exception/ApplicationException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/main/java/com/yihuisoft/bankinterfacebiz/service/BankMappingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3762">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
+          <folding>
+            <element signature="docComment;method#run#0;class#BankMappingService#0" />
+            <element signature="method#addBankMapping#0;class#BankMappingService#0" />
+            <element signature="method#addBankMappingString#0;class#BankMappingService#0" />
+            <element signature="method#updateBankMapping#0;class#BankMappingService#0" />
+            <element signature="method#queryPage#0;class#BankMappingService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/postgresql-dev.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/oracle-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mysql-pro.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db2-dev.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/i18n/messages_en_US.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bankinterface-biz/src/main/resources/mybatis/bank/BankMappingMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+          <folding>
+            <element signature="n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#select#1;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>yihuisoft-service:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>yihuisoft-common-biz</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21132076" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.ethz.ganymed:ganymed-ssh2:build210</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

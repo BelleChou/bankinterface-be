@@ -1,0 +1,120 @@
+package com.yihuisoft.testprojectbiz.entity;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * 银行  的xml 与译会的  属性对应 结构体现
+ *
+ * @author isst
+ * @version v1.0.0
+ */
+public class BankMapping implements Serializable {
+    /**
+     * id序号
+     */
+    private Long id;
+    /**
+     * 属于交易码
+     */
+    private Long interfaceNo;
+    /**
+     * 层次结构 父id
+     */
+    private Long parentID;
+    /**
+     * 标签内是否可以有 内容   0发送  1 接收
+     */
+    private Long type;
+    /**
+     * 银行元素
+     */
+    private String bankele;
+    /**
+     * 元素上的备注 可有可
+     */
+    private String notes;
+    /**
+     * 译会元素
+     */
+    private String yihuiele;
+    /**
+     * 元素标签中的  内容 <ele> elevalue </ele>
+     */
+    private String elevalue;
+
+    private List<BankMapping> child = new ArrayList<>();
+
+    public List<BankMapping> getChild() {
+        return child;
+    }
+
+    public void setChild(List<BankMapping> child) {
+        this.child = child;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getInterfaceNo() {
+        return interfaceNo;
+    }
+
+    public void setInterfaceNo(Long interfaceNo) {
+        this.interfaceNo = interfaceNo;
+    }
+
+    public Long getParentID() {
+        return parentID;
+    }
+
+    public void setParentID(Long parentID) {
+        this.parentID = parentID;
+    }
+
+    public Long getType() {
+        return type;
+    }
+
+    public void setType(Long type) {
+        this.type = type;
+    }
+
+    public String getBankele() {
+        return bankele;
+    }
+
+    public void setBankele(String bankele) {
+        this.bankele = bankele;
+    }
+
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
+
+    public String getYihuiele() {
+        return yihuiele;
+    }
+
+    public void setYihuiele(String yihuiele) {
+        this.yihuiele = yihuiele;
+    }
+
+    public String getElevalue() {
+        return elevalue;
+    }
+
+    public void setElevalue(String elevalue) {
+        this.elevalue = elevalue;
+    }
+}

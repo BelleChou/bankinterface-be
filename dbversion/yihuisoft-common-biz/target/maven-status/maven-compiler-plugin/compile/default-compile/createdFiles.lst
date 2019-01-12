@@ -1,0 +1,3 @@
+com\yihuisoft\commonbiz\service\BaseService.class
+com\yihuisoft\commonbiz\mapper\master\BaseDaoMapper.class
+com\yihuisoft\commonbiz\Criteria.class

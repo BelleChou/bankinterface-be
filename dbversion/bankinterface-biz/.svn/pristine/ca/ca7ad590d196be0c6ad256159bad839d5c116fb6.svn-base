@@ -1,0 +1,5 @@
+## master \u4E3B\u6570\u636E\u5E93
+master.datasource.url=jdbc:oracle:thin:@localhost:1521/orcl
+master.datasource.username=C##SCOTT
+master.datasource.password=tiger
+master.datasource.driverClassName=oracle.jdbc.driver.OracleDriver

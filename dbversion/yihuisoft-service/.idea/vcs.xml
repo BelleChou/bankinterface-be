@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../bankinterface-biz" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../yihuisoft-common" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/../yihuisoft-common-biz" vcs="svn" />
+  </component>
+</project>

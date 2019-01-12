@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatiscom.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yihuisoft.testprojectbiz.mapper.bank.BankMappingMapper">
+
+    <select id="findByBankInterfaceNoSend" resultType="com.yihuisoft.testprojectbiz.entity.BankMapping"
+            parameterType="java.lang.Long">
+       select  * from bankmapping where type=0 and  interfaceno = #{interfaceno}
+    </select>
+    <select id="findByBankInterfaceNoReceive" resultType="com.yihuisoft.testprojectbiz.entity.BankMapping"
+            parameterType="java.lang.Long">
+       select  * from bankmapping where type=1 and  interfaceno =  #{interfaceno}
+    </select>
+
+
+</mapper>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatiscom.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yihuisoft.bankinterfacebiz.mapper.bank.BankMappingMapper">
+
+
+    <sql id="page_select_bank_where">
+
+        <if test="INTERFACENO!=null || WRITER != null ">
+            <where>
+                <if test="INTERFACENO != null">
+                    and INTERFACE_NO like '%${INTERFACENO}%'
+                </if>
+                <if test="WRITER != null">
+                    and WRITER like '%${WRITER}%'
+                </if>
+            </where>
+        </if>
+
+    </sql>
+
+    <!--分頁查詢-->
+    <select id="selectPageBankMappingList" resultType="com.yihuisoft.bankinterfacebiz.entity.BankMapping"
+            parameterType="java.util.Map">
+        select id,INTERFACE_NO INTERFACENO,REMARKS,WRITER,CREATE_DATE CREATEDATE,MODIFY_TIME MODIFYTIME ,SEND,RECEIVE
+        from (
+        select ROWNUM rn,t_bank_mapping.* from t_bank_mapping
+        <include refid="page_select_bank_where"></include>
+        )
+        WHERE RN BETWEEN #{start} AND #{end}
+    </select>
+
+    <!-- 分页查询条数  -->
+    <select id="selectCountBankMapping" parameterType="java.util.Map" resultType="java.lang.Integer">
+        select count(0) from t_bank_mapping
+        <include refid="page_select_bank_where"></include>
+    </select>
+
+    <!-- 查找单个  -->
+    <select id="findByBankMappingInterfaceNo" resultType="com.yihuisoft.bankinterfacebiz.entity.BankMapping"
+            parameterType="java.lang.String">
+        select * from t_bank_mapping where INTERFACE_NO = #{interfaceNo}
+    </select>
+
+    <!-- 增加单个  -->
+    <insert id="addOneBankMapping" parameterType="com.yihuisoft.bankinterfacebiz.entity.BankMapping"
+            useGeneratedKeys="false">
+        insert into t_bank_mapping(id,interface_no,remarks,writer,create_date,modify_time,send,receive)
+        values(seq_t_bank_mapping.nextval,#{interfaceNo},#{remarks},#{writer},
+        sysdate,sysdate,#{send},#{receive})
+    </insert>
+
+    <!-- 修改单个  -->
+    <insert id="updateOneBankMapping" parameterType="com.yihuisoft.bankinterfacebiz.entity.BankMapping"
+            useGeneratedKeys="false">
+        update t_bank_mapping
+        <set>
+            <if test="writer!=null">
+                writer =#{writer},
+            </if>
+
+            <if test="interfaceNo != null">
+                interface_no = #{interfaceNo},
+            </if>
+            <if test="remarks != null">
+                remarks = #{remarks},
+            </if>
+            <if test="send != null">
+                send = #{send},
+            </if>
+            <if test="receive != null">
+                receive = #{receive},
+            </if>
+        </set>
+        , modify_time = sysdate
+        where id=#{id}
+    </insert>
+
+
+    <!-- 删除单个  -->
+    <insert id="delOneBankMapping" parameterType="java.lang.Long" useGeneratedKeys="false">
+        delete from t_bank_mapping where id=#{id}
+
+    </insert>
+
+
+</mapper>

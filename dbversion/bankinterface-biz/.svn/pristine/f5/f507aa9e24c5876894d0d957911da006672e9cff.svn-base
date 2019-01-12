@@ -1,0 +1,75 @@
+package com.yihuisoft.testprojectbiz.entity;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * 银行的  交易码类
+ *
+ * @author isst
+ * @version v1.0.0
+ */
+public class Bankno implements Serializable {
+    /**
+     * 银行的序号
+     */
+    private Long id;
+    /**
+     * 交易码
+     */
+    private Long interfaceNo;
+    /**
+     * 备注
+     */
+    private String remarks;
+    /**
+     * 创建人
+     */
+    private String writer;
+
+    /***
+     * 对应关系  一个交易码有很多个   标签
+     */
+    private List<BankMapping> bmlist = new ArrayList<>();
+
+    public List<BankMapping> getBmlist() {
+        return bmlist;
+    }
+
+    public void setBmlist(List<BankMapping> bmlist) {
+        this.bmlist = bmlist;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getInterfaceNo() {
+        return interfaceNo;
+    }
+
+    public void setInterfaceNo(Long interfaceNo) {
+        this.interfaceNo = interfaceNo;
+    }
+
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
+    }
+
+    public String getWriter() {
+        return writer;
+    }
+
+    public void setWriter(String writer) {
+        this.writer = writer;
+    }
+}

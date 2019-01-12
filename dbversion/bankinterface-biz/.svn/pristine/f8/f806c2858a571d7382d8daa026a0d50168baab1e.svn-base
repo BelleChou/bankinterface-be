@@ -1,0 +1,63 @@
+package com.yihuisoft.testprojectbiz.service;
+
+import com.yihuisoft.common.InDTO;
+import com.yihuisoft.common.OutDTO;
+import com.yihuisoft.testprojectbiz.entity.BankMapping;
+import com.yihuisoft.testprojectbiz.mapper.bank.BankMappingMapper;
+import com.yihuisoft.testprojectbiz.utils.DataToXmlUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Map;
+
+/**
+ * 银行  的xml 与译会的  属性对应 结构体现  Service
+ *
+ * @author isst
+ * @version v1.0.0
+ */
+@Service
+public class BankMappingService {
+
+    @Autowired
+    private BankMappingMapper bankMappingMapper;
+
+
+    /***
+     *当前的 调用  接口
+     * @param inDTO    公共的InDTO
+     * @return 公共的  OutDTO
+     * @throws Exception   可能遇到一次 抛出由 让上一级处理
+     */
+    public OutDTO run(InDTO inDTO) throws Exception {
+
+        Long tranCode = Long.valueOf(String.valueOf(inDTO.get("tranCode")));
+
+
+        DataToXmlUtil util = new DataToXmlUtil();
+
+        List<BankMapping> inList = bankMappingMapper.findByBankInterfaceNoSend(tranCode);
+
+        String inXml = util.listToStr(inDTO, inList);
+
+        System.out.println(inXml);
+
+        //假设这了调用了 银行和的   实例   rspXml 是得到的xml
+
+
+        List<BankMapping> bnakMappList = bankMappingMapper.findByBankInterfaceNoReceive(tranCode);
+        List<BankMapping> nodeList = util.getFatherNode(bnakMappList);
+
+
+        Map<String, Object> data = util.strToMap(util.rspXml, nodeList);
+
+
+        System.err.println(util.listToStr(inDTO, bnakMappList));
+
+        OutDTO outDTO = new OutDTO();
+        outDTO.setData(data);
+        return outDTO;
+
+    }
+}

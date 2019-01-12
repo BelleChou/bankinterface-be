@@ -1,0 +1,248 @@
+package com.yihuisoft.bankinterfacebiz.test;
+
+import com.yihuisoft.bankinterfacebiz.entity.BankData;
+import com.yihuisoft.bankinterfacebiz.entity.BankMapping;
+import com.yihuisoft.bankinterfacebiz.mapper.bank.BankMappingMapper;
+import com.yihuisoft.bankinterfacebiz.utils.DataToXmlUtil;
+import com.yihuisoft.common.InDTO;
+import com.yihuisoft.common.OutDTO;
+import com.yihuisoft.bankinterfacebiz.service.BankMappingService;
+import com.yihuisoft.common.exception.ApplicationException;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/***
+ *  用来测试   的
+ *
+ *
+ *  删除  传一个id 就好了。
+ */
+public class BankTest extends BaseTest {
+    @Autowired
+    BankMappingService bankMappingService;
+
+    /***
+     *  测试   整个发送  与 接收的流程
+     * @throws Exception
+     */
+    @Test
+    public void bankTests() throws Exception {
+
+        InDTO inDTO = new InDTO();
+
+        Map<String, Object> data = new HashMap<>();
+        // 头里面的  retInf
+        Map<String, Object> retInf = new HashMap<>();
+
+
+        /** inbody  的参数*/
+        Map<String, Object> inBody = new HashMap<>();
+
+        /**客户标识类型*/
+        data.put("CstIdTpYiHui", " 2018-7-3 16:35:50");
+
+        /**客户标识*/
+        data.put("CstIdYiHui", " 2018-7-3 16:35:50");
+
+        /**定位串*/
+        data.put("LoctStrYiHui", 0);
+
+        /**查询行数*/
+        data.put("QryLnNumYiHui", 0);
+
+
+        inDTO.setIp("127.0.0.1");
+
+
+        //设置要参数  apphead中的参数
+        data.put("branchId", " 0435636050");
+        data.put("tlrNo", " 0435636050");
+        data.put("tlrPswd", " 0435636050");
+        data.put("tlrLvl", " 0435636050");
+        data.put("tlrTp", " 0435637050");
+        data.put("bsnSeqNo", " 0435637050");
+
+
+        data.put("svcCd", " 2018-7-3 16:35:50");
+        data.put("cnsmSysId", " 2018-7-3 16:35:50");
+        data.put("srcSysSeqNo", " 2018-7-3 16:35:50");
+        data.put("svcScn", " 2018-7-3 16:35:50");
+        data.put("tranRetSt", " 2018-7-3 16:35:50");
+        data.put("cnsmSysSeqNo", " 2018-7-3 16:35:50");
+        data.put("tmnlNo", " 2018-7-3 16:35:50");
+        data.put("tranDt", " 2018-7-3 16:35:50");
+        data.put("tranTm", " 2018-7-3 16:35:50");
+        data.put("srcSysId", " 2018-7-3 16:35:50");
+        data.put("srcSysSvrId", " 2018-7-3 16:35:50");
+        data.put("chnlTp", " 2018-7-3 16:35:50");
+        data.put("tranMd", " 2018-7-3 16:35:50");
+        data.put("srcSysTmnlNo", " 2018-7-3 16:35:50");
+        data.put("cnsmSysSvrId", " 2018-7-3 16:35:50");
+
+        //  条形参数  和  inBody 参数
+//        data.put("retInf",retInf);
+//        data.put("inBody",inBody);
+
+        data.put("retCd", "000000");
+        data.put("retMsg", "交易成功");
+
+        data.put("tranCode", 1024);          //交易码必须要设置的
+
+        data.put("interfaceNo", "1025");
+        inDTO.setData(data);
+
+        OutDTO outDTO = bankMappingService.run(inDTO);
+
+        System.out.println("得到map中的数据大小" + outDTO.getData().size());
+
+
+    }
+
+
+    /***
+     * 用来测试  新增
+     * @throws Exception
+     */
+    @Test
+    public void testAdd() throws Exception {
+        InDTO inDTO = new InDTO();
+        Map<String, Object> map = new HashMap<>();
+        map.put("interfaceNo", "1027");
+        map.put("remarks", "备注啊");
+        map.put("writer", "测试人员");
+
+        //添加     BankData 数据
+        List<BankData> send = new ArrayList<>();
+        send.add(new BankData("services", "这个是交易号", "1"));
+        send.add(new BankData("SYS_HEAD", "系统头部", "1"));
+        send.add(new BankData("SvcCd", "服务代码", "0"));
+        send.add(new BankData("SvcScn", "服务场景", "0"));
+        send.add(new BankData("CnsmSysId", "调用方系统Id", "0"));
+        send.add(new BankData("CnsmSysSeqNo", "调用方系统流水号", "0"));
+        send.add(new BankData("TranRetSt", "交易返回状态", "0"));
+        send.add(new BankData("RetInf", "交易返回信息数组", "1"));
+        send.add(new BankData("RetCd", "返回码", "0"));
+        send.add(new BankData("RetMsg", "交易返回信息", "0"));
+        send.add(new BankData("RetInf", "交易返回信息数组", "-1"));
+        send.add(new BankData("SrcSysSeqNo", "源发起系统流水号", "0"));
+        send.add(new BankData("SrcSysId", "源发起系统Id", "0"));
+        send.add(new BankData("SYS_HEAD", "系统头部", "-1"));
+        send.add(new BankData("APP_HEAD", "app头部", "1"));
+        send.add(new BankData("BranchId", "编号", "0"));
+        send.add(new BankData("TlrNo", "代码", "0"));
+        send.add(new BankData("TlrPswd", "密码", "0"));
+        send.add(new BankData("TlrLvl", "标题", "0"));
+        send.add(new BankData("TlrTp", "标题", "0"));
+        send.add(new BankData("BsnSeqNo", "编号", "0"));
+        send.add(new BankData("APP_HEAD", "app头部", "-1"));
+        send.add(new BankData("BODY", "交易码", "1"));
+        send.add(new BankData("CstIdTp", "客户标识类型", "0", "CstIdTpYiHui", "默认值CstIdT"));
+        send.add(new BankData("CstId", "客户标识", "0", "CstIdYiHui", "默认值CstId"));
+        send.add(new BankData("LoctStr", "定位串", "0", "LoctStrYiHui", "默认值LoctStr"));
+        send.add(new BankData("QryLnNum", "查询行数", "0", "QryLnNumYiHui", "默认值QryLnNum"));
+        send.add(new BankData("BODY", "交易码", "-1"));
+        send.add(new BankData("services", "这个是交易号", "-1"));
+        map.put("send", send);
+        List<BankData> receive = new ArrayList<>(38);
+
+        receive.add(new BankData("services", "这个是交易号", "1"));
+        receive.add(new BankData("SYS_HEAD", "系统头部", "1"));
+        receive.add(new BankData("SvcCd", "服务代码", "0"));
+        receive.add(new BankData("SvcScn", "服务场景", "0"));
+        receive.add(new BankData("CnsmSysId", "调用方系统Id", "0"));
+        receive.add(new BankData("CnsmSysSeqNo", "调用方系统流水号", "0"));
+        receive.add(new BankData("TranRetSt", "交易返回状态", "0"));
+        receive.add(new BankData("RetInf", "交易返回信息数组", "1"));
+        receive.add(new BankData("RetCd", "返回码", "0"));
+        receive.add(new BankData("RetMsg", "交易返回信息", "0"));
+        receive.add(new BankData("RetInf", "交易返回信息数组", "-1"));
+        receive.add(new BankData("SrcSysSeqNo", "交易返源发起系统流水号回信息", "0"));
+        receive.add(new BankData("SrcSysId", "源发起系统Id", "0"));
+        receive.add(new BankData("SYS_HEAD", "系统头部", "-1"));
+        receive.add(new BankData("APP_HEAD", "app头部", "1"));
+        receive.add(new BankData("APP_HEAD", "app头部", "-1"));
+        receive.add(new BankData("BODY", "body部分", "1"));
+        receive.add(new BankData("VerNo", "版本号", "0", "VerNoYiHui", "默认值VerNo"));
+        receive.add(new BankData("VrfyNo", "未知编号", "0", "VrfyNoYiHuiHui", "默认值VrfyNo"));
+        receive.add(new BankData("TranCd", "前置交易码", "0", "TranCdYiHui", "默认值VrfyNo"));
+        receive.add(new BankData("RqsTm", "未知编号", "0", "RqsTmYiHui", "RqsTm默认值"));
+        receive.add(new BankData("TotRcrdNum", "总记录数", "0", "TotRcrdNumYiHui", "默认值"));
+        receive.add(new BankData("TotPgNo", "总页数", "0", "TotPgNoYiHui", "默认值"));
+        receive.add(new BankData("PgRcrdNo", "每页记录数", "0", "PgRcrdNoYiHui", "默认值PgRcrdNoYiHui"));
+        receive.add(new BankData("GdsMssgArray", "商品信息数组", "1", "GdsMssgArrayYiHui", "默认值"));
+        receive.add(new BankData("CmdtyCd", "商品编号", "0", "CmdtyCdYiHuiYiHui", "默认值"));
+        receive.add(new BankData("CmdtyNm", "商品名称", "0", "CmdtyNmYiHuiYiHui", "默认值"));
+        receive.add(new BankData("CmdtyDsc", "商品描述", "0", "CmdtyDscYiHui", "默认值"));
+        receive.add(new BankData("CmdtyPntsPrc", "商品描述", "0", "CmdtyPntsPrcYiHui", "默认值CmdtyPntsPrc"));
+        receive.add(new BankData("CmdtyCashPrc", "商品所需现金", "0", "CmdtyCashPrcYiHui", "默认值CmdtyCashPrc"));
+        receive.add(new BankData("GdsTm", "商品描述", "0", "GdsTmYiHui", "默认值GdsTm"));
+        receive.add(new BankData("CmdtyLvlScr", "商品评分", "0", "CmdtyLvlScrYiHui", "默认值CmdtyLvlScrYiHui"));
+        receive.add(new BankData("PhotoNo", "商品评分", "0", "PhotoNoYiHui", "默认值PhotoNoYiHui"));
+        receive.add(new BankData("CnsmRuleID", "商品评分", "0", "CnsmRuleIDYiHui", "默认值CnsmRuleIDYiHui"));
+        receive.add(new BankData("CnsmRuleDsc", "商品评分", "0", "CnsmRuleDscYiHui", "默认值CnsmRuleDsc"));
+        receive.add(new BankData("GdsMssgArray", "商品信息数组", "-1", "GdsMssgArrayYiHui", "默认值GdsMssgArray"));
+        receive.add(new BankData("BODY", "body结束", "-1", "GdsMssgArrayYiHui", "默认值BODY"));
+        receive.add(new BankData("services", "这个是交易号", "1"));
+        map.put("receive", receive);
+        inDTO.setData(map);
+
+        OutDTO outDTO = bankMappingService.addBankMapping(inDTO);
+
+
+        System.out.println(outDTO.get("message"));
+
+
+    }
+
+
+    /**
+     * 测试修改，  可以单个属性 的
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testUpdateBankMapping() throws Exception {
+        InDTO inDTO = new InDTO();
+        Map<String, Object> map = new HashMap<>(2);
+        map.put("id", "26");
+        map.put("interfaceNo", "1024");
+
+
+        inDTO.setData(map);
+        OutDTO outDTO = bankMappingService.updateBankMapping(inDTO);
+
+        System.out.println("返回的OutDTO" + outDTO);
+    }
+
+    /**
+     * 测试修改，  可以单个属性 的
+     *
+     * @throws Exception
+     */
+    @Test
+    public void testQueryPage() throws Exception {
+        InDTO inDTO = new InDTO();
+
+
+        Map<String, Object> map = new HashMap<>(2);
+
+        inDTO.setPageNo(1);
+        inDTO.setPageSize(3);
+
+        inDTO.setData(map);
+
+        /**
+         *  发送   和  接收   分页中的属性，前台要对象还是要字符串？
+         * */
+        OutDTO outDTO = bankMappingService.queryPage(inDTO);
+
+        System.out.println("返回的OutDTO" + outDTO);
+    }
+
+
+}

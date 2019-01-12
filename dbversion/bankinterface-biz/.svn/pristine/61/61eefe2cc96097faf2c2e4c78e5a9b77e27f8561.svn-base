@@ -1,0 +1,13 @@
+package com.yihuisoft.testprojectbiz.mapper.bank;
+
+
+/**
+ * 银行的  交易码类  mapper接口类
+ *
+ * @author isst
+ * @version v1.0.0
+ */
+public interface BanknoMapper {
+
+
+}

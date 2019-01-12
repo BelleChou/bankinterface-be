@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatiscom.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yihuisoft.commonbiz.mapper.master.BaseDaoMapper">
+<select id="selectEntityList" resultType="Map">
+ ${value}
+</select>
+ <select id="selectEntityOne" resultType="Map">
+  ${value}
+ </select>
+ <select id="count" resultType="java.lang.Integer">
+  ${value}
+ </select>
+ <select id="selectEntityById" resultType="Map">
+  ${value}
+ </select>
+ <insert id="insertEntity">
+ ${value}
+</insert>
+<update id="updateEntity">
+ ${value}
+</update>
+ <update id="updateSelective">
+  ${value}
+ </update>
+ <update id="updateSelectiveById">
+  ${value}
+ </update>
+ <delete id="deleteEntity">
+  ${value}
+ </delete>
+ <delete id="deleteEntityById">
+  ${value}
+ </delete>
+</mapper>

@@ -1,0 +1,36 @@
+package com.yihuisoft.testprojectbiz.mapper.bank;
+
+
+import com.yihuisoft.testprojectbiz.entity.BankMapping;
+
+import java.util.List;
+
+/**
+ * 银行  的xml 与译会的  属性对应 结构体现  mapper接口类
+ *
+ * @author isst
+ * @version v1.0.0
+ */
+public interface BankMappingMapper {
+
+
+    /**
+     * 发送报文
+     * 根据  bankno中的  interfaceno 查询  他之下的所有  Bank Mapping
+     *
+     * @param InterfaceNo Long  的 Bankno中的
+     * @return List<BankMapping>
+     */
+    List<BankMapping> findByBankInterfaceNoSend(Long InterfaceNo) throws Exception;
+
+
+    /**
+     * 接收报文
+     * 根据  bankno中的  interfaceno 查询  他之下的所有  Bank Mapping
+     *
+     * @param InterfaceNo Long  的 Bankno中的
+     * @return List<BankMapping>
+     */
+    List<BankMapping> findByBankInterfaceNoReceive(Long InterfaceNo) throws Exception;
+
+}

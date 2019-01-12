@@ -1,0 +1,90 @@
+package com.yihuisoft.testprojectbiz.test;
+
+import com.yihuisoft.common.InDTO;
+import com.yihuisoft.common.OutDTO;
+import com.yihuisoft.testprojectbiz.service.BankMappingService;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class BankTest extends BaseTest {
+    @Autowired
+    BankMappingService bankMappingService;
+
+    @Test
+    public void bankTests() throws Exception {
+
+        InDTO inDTO = new InDTO();
+        Map<String, Object> data = new HashMap<>();
+        // 头里面的  retInf
+        Map<String, Object> retInf = new HashMap<>();
+
+
+        /** inbody  的参数*/
+        Map<String, Object> inBody = new HashMap<>();
+
+        /**客户标识类型*/
+        data.put("CstIdTpYiHui", " 2018-7-3 16:35:50");
+
+        /**客户标识*/
+        data.put("CstIdYiHui", " 2018-7-3 16:35:50");
+
+        /**定位串*/
+        data.put("LoctStrYiHui", 0);
+
+        /**查询行数*/
+        data.put("QryLnNumYiHui", 0);
+
+
+        inDTO.setIp("127.0.0.1");
+
+
+        //设置要参数  apphead中的参数
+        data.put("branchId", " 0435636050");
+        data.put("tlrNo", " 0435636050");
+        data.put("tlrPswd", " 0435636050");
+        data.put("tlrLvl", " 0435636050");
+        data.put("tlrTp", " 0435637050");
+        data.put("bsnSeqNo", " 0435637050");
+
+
+        data.put("svcCd", " 2018-7-3 16:35:50");
+        data.put("cnsmSysId", " 2018-7-3 16:35:50");
+        data.put("srcSysSeqNo", " 2018-7-3 16:35:50");
+        data.put("svcScn", " 2018-7-3 16:35:50");
+        data.put("tranRetSt", " 2018-7-3 16:35:50");
+        data.put("cnsmSysSeqNo", " 2018-7-3 16:35:50");
+        data.put("tmnlNo", " 2018-7-3 16:35:50");
+        data.put("tranDt", " 2018-7-3 16:35:50");
+        data.put("tranTm", " 2018-7-3 16:35:50");
+        data.put("srcSysId", " 2018-7-3 16:35:50");
+        data.put("srcSysSvrId", " 2018-7-3 16:35:50");
+        data.put("chnlTp", " 2018-7-3 16:35:50");
+        data.put("tranMd", " 2018-7-3 16:35:50");
+        data.put("srcSysTmnlNo", " 2018-7-3 16:35:50");
+        data.put("cnsmSysSvrId", " 2018-7-3 16:35:50");
+
+        //  条形参数  和  inBody 参数
+//        data.put("retInf",retInf);
+//        data.put("inBody",inBody);
+
+        data.put("retCd", "000000");
+        data.put("retMsg", "交易成功");
+
+        data.put("tranCode", 1024);          //交易码必须要设置的
+        inDTO.setData(data);
+        OutDTO outDTO = bankMappingService.run(inDTO);
+
+        Map<String, Object> map = outDTO.getData();
+
+        for (Map.Entry<String, Object> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ":" + entry.getValue());
+        }
+
+
+    }
+
+
+}

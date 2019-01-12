@@ -1,0 +1,137 @@
+2018-08-16 16:55:28,612 INFO (StartupInfoLogger.java:48)- Starting YihuisoftserviceApplication on isst with PID 14468 (F:\BankUtil\dbsemiauto\dbversion\yihuisoft-service\target\classes started by isst in F:\BankUtil\dbsemiauto\dbversion\bankinterface-biz)
+2018-08-16 16:55:28,629 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-08-16 16:55:28,630 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-16 16:55:39,783 INFO (StartupInfoLogger.java:57)- Started YihuisoftserviceApplication in 12.944 seconds (JVM running for 15.702)
+2018-08-16 16:58:25,260 DEBUG (BaseJdbcLogger.java:145)- ==>  Preparing: select count(0) from t_bank_mapping 
+2018-08-16 16:58:25,365 DEBUG (BaseJdbcLogger.java:145)- ==> Parameters: 
+2018-08-16 16:58:25,447 DEBUG (BaseJdbcLogger.java:145)- <==      Total: 1
+2018-08-16 16:58:25,450 DEBUG (BaseJdbcLogger.java:145)- ==>  Preparing: select id,INTERFACE_NO INTERFACENO,REMARKS,WRITER,CREATE_DATE CREATEDATE,MODIFY_TIME MODIFYTIME ,SEND,RECEIVE from ( select ROWNUM rn,t_bank_mapping.* from t_bank_mapping ) WHERE RN BETWEEN ? AND ? 
+2018-08-16 16:58:25,453 DEBUG (BaseJdbcLogger.java:145)- ==> Parameters: 1(Integer), 3(Integer)
+2018-08-16 16:58:25,489 DEBUG (BaseJdbcLogger.java:145)- <==      Total: 3
+2018-08-16 16:59:08,738 DEBUG (BaseJdbcLogger.java:145)- ==>  Preparing: select count(0) from t_bank_mapping 
+2018-08-16 16:59:08,738 DEBUG (BaseJdbcLogger.java:145)- ==> Parameters: 
+2018-08-16 16:59:08,740 DEBUG (BaseJdbcLogger.java:145)- <==      Total: 1
+2018-08-16 16:59:08,740 DEBUG (BaseJdbcLogger.java:145)- ==>  Preparing: select id,INTERFACE_NO INTERFACENO,REMARKS,WRITER,CREATE_DATE CREATEDATE,MODIFY_TIME MODIFYTIME ,SEND,RECEIVE from ( select ROWNUM rn,t_bank_mapping.* from t_bank_mapping ) WHERE RN BETWEEN ? AND ? 
+2018-08-16 16:59:08,741 DEBUG (BaseJdbcLogger.java:145)- ==> Parameters: 10(Integer), 12(Integer)
+2018-08-16 16:59:08,744 DEBUG (BaseJdbcLogger.java:145)- <==      Total: 0
+2018-08-16 16:59:10,376 DEBUG (BaseJdbcLogger.java:145)- ==>  Preparing: select count(0) from t_bank_mapping 
+2018-08-16 16:59:10,377 DEBUG (BaseJdbcLogger.java:145)- ==> Parameters: 
+2018-08-16 16:59:10,378 DEBUG (BaseJdbcLogger.java:145)- <==      Total: 1
+2018-08-16 16:59:10,378 DEBUG (BaseJdbcLogger.java:145)- ==>  Preparing: select id,INTERFACE_NO INTERFACENO,REMARKS,WRITER,CREATE_DATE CREATEDATE,MODIFY_TIME MODIFYTIME ,SEND,RECEIVE from ( select ROWNUM rn,t_bank_mapping.* from t_bank_mapping ) WHERE RN BETWEEN ? AND ? 
+2018-08-16 16:59:10,379 DEBUG (BaseJdbcLogger.java:145)- ==> Parameters: 7(Integer), 9(Integer)
+2018-08-16 16:59:10,381 DEBUG (BaseJdbcLogger.java:145)- <==      Total: 0
+2018-08-16 16:59:10,979 DEBUG (BaseJdbcLogger.java:145)- ==>  Preparing: select count(0) from t_bank_mapping 
+2018-08-16 16:59:10,980 DEBUG (BaseJdbcLogger.java:145)- ==> Parameters: 
+2018-08-16 16:59:10,981 DEBUG (BaseJdbcLogger.java:145)- <==      Total: 1
+2018-08-16 16:59:10,982 DEBUG (BaseJdbcLogger.java:145)- ==>  Preparing: select id,INTERFACE_NO INTERFACENO,REMARKS,WRITER,CREATE_DATE CREATEDATE,MODIFY_TIME MODIFYTIME ,SEND,RECEIVE from ( select ROWNUM rn,t_bank_mapping.* from t_bank_mapping ) WHERE RN BETWEEN ? AND ? 
+2018-08-16 16:59:10,983 DEBUG (BaseJdbcLogger.java:145)- ==> Parameters: 4(Integer), 6(Integer)
+2018-08-16 16:59:10,985 DEBUG (BaseJdbcLogger.java:145)- <==      Total: 2
+2018-08-16 16:59:43,010 ERROR (CallController.java:199)- 系统异常
+java.lang.NullPointerException: null
+	at com.yihuisoft.bankinterfacebiz.service.BankMappingService.updateBankMappingString(BankMappingService.java:347)
+	at com.yihuisoft.bankinterfacebiz.service.BankMappingService$$FastClassBySpringCGLIB$$d1907e4f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:282)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.yihuisoft.bankinterfacebiz.service.BankMappingService$$EnhancerBySpringCGLIB$$4a31482a.updateBankMappingString(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:216)
+	at com.yihuisoft.yihuisoftservice.controller.CallController.runMethod(CallController.java:222)
+	at com.yihuisoft.yihuisoftservice.controller.CallController.callMethod(CallController.java:167)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.yihuisoft.yihuisoftservice.ACAFilter.doFilter(ACAFilter.java:46)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-08-16 17:13:33,269 DEBUG (BaseJdbcLogger.java:145)- ==>  Preparing: select count(0) from t_bank_mapping 
+2018-08-16 17:13:33,270 DEBUG (BaseJdbcLogger.java:145)- ==> Parameters: 
+2018-08-16 17:13:33,272 DEBUG (BaseJdbcLogger.java:145)- <==      Total: 1
+2018-08-16 17:13:33,273 DEBUG (BaseJdbcLogger.java:145)- ==>  Preparing: select id,INTERFACE_NO INTERFACENO,REMARKS,WRITER,CREATE_DATE CREATEDATE,MODIFY_TIME MODIFYTIME ,SEND,RECEIVE from ( select ROWNUM rn,t_bank_mapping.* from t_bank_mapping ) WHERE RN BETWEEN ? AND ? 
+2018-08-16 17:13:33,274 DEBUG (BaseJdbcLogger.java:145)- ==> Parameters: 1(Integer), 3(Integer)
+2018-08-16 17:13:33,276 DEBUG (BaseJdbcLogger.java:145)- <==      Total: 3
+2018-08-16 18:22:17,325 INFO (StartupInfoLogger.java:48)- Starting YihuisoftserviceApplication on isst with PID 5164 (F:\BankUtil\dbsemiauto\dbversion\yihuisoft-service\target\classes started by isst in F:\BankUtil\dbsemiauto\dbversion\bankinterface-biz)
+2018-08-16 18:22:17,365 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-08-16 18:22:17,365 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-16 18:22:27,312 INFO (StartupInfoLogger.java:57)- Started YihuisoftserviceApplication in 11.125 seconds (JVM running for 13.761)
+2018-08-16 18:23:23,338 INFO (StartupInfoLogger.java:48)- Starting YihuisoftserviceApplication on isst with PID 12240 (F:\BankUtil\dbsemiauto\dbversion\yihuisoft-service\target\classes started by isst in F:\BankUtil\dbsemiauto\dbversion\bankinterface-biz)
+2018-08-16 18:23:23,340 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-08-16 18:23:23,340 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-16 18:23:28,023 INFO (StartupInfoLogger.java:57)- Started YihuisoftserviceApplication in 5.104 seconds (JVM running for 5.979)
+2018-08-16 18:24:01,025 INFO (StartupInfoLogger.java:48)- Starting YihuisoftserviceApplication on isst with PID 12108 (F:\BankUtil\dbsemiauto\dbversion\yihuisoft-service\target\classes started by isst in F:\BankUtil\dbsemiauto\dbversion\bankinterface-biz)
+2018-08-16 18:24:01,027 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2018-08-16 18:24:01,028 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-08-16 18:24:06,118 INFO (StartupInfoLogger.java:57)- Started YihuisoftserviceApplication in 5.511 seconds (JVM running for 6.387)
